@@ -1724,7 +1724,7 @@ __w_main() {
 if [[ ${BASH_SOURCE[0]} == "$0" ]]; then
   if [[ ! -f $__P10K_SRC ]]; then   # e.g. bash <(curl ...): nothing on disk we could install
     echo 'Please download the file first, then run it:' >&2
-    echo '  curl -fsSLo p10k.bash <raw-url-of-p10k.bash> && bash p10k.bash' >&2
+    echo '  curl -fsSLo p10k.bash https://raw.githubusercontent.com/NerixGO/p10k/main/p10k.bash && bash p10k.bash' >&2
     exit 1
   fi
   case ${1:-configure} in
